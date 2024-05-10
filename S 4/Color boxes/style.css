@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+main{
+   padding: 30px;
+    width: 100%;
+    height: 100vh;
+    display:flex ;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    /* gap: px; */
+}
+.child{
+    margin: 1rem;
+    width: 100px;
+    height: 100px;
+    border: 2px solid rgb(0, 0, 0);
+}

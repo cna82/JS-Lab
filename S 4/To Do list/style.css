@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background-image: linear-gradient(to right, #605e7e, #6b73c1, #37b3cc);
+    margin: 50px 2%;
+}
+div{
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+div h1{
+    font-size: 55px;
+}
+div #list{
+    width: 65ch;
+    padding: 15px;
+    border-radius: 25px;
+}
+div #list::placeholder{
+    font-size: 18px;
+    text-align: center;
+    color: #605e7e;
+
+}

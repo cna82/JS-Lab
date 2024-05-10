@@ -1,5 +1,5 @@
 let children = document.querySelectorAll(".child");
-// let count=0;
+let count = 0;
 
 function randomBg() {
   let x = Math.floor(Math.random() * 256);

@@ -1,6 +1,12 @@
-function calaculateScores(footballScores) {
-  let ourTeam = footballScores[0][0];
-  let enemyTeam = footballScores[footballScores.length-1][0];
-
-  
+function calScores(arrPoints) {
+  let points = 0;
+  for (const point of arrPoints) {
+    if (point[0] > point[2]) {
+      points += 3;
+    }
+    if (point[0] === point[2]) {
+      points++;
+    }
+  }
+  return points;
 }

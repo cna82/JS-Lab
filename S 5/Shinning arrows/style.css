@@ -1,0 +1,54 @@
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(53, 53, 53);
+}
+
+.upDown {
+    position: relative;
+}
+
+
+.up {
+    color: white;
+    font-size: 90px;
+    position: absolute;
+    top: -15rem;
+    right: -5px;
+}
+
+.down {
+    color: white;
+    font-size: 90px;
+    position: absolute;
+    top: 15rem;
+    right: -5px;
+}
+
+.leftRight {
+    position: relative;
+}
+
+.left {
+    color: white;
+    font-size: 90px;
+    position: absolute;
+    top: -10px;
+    left: -19rem;
+}
+
+.right {
+    color: white;
+    font-size: 90px;
+    position: absolute;
+    top: -10px;
+    right: -15rem;
+}
+
+.shine {
+    color: rgb(0, 195, 255);
+    transition: 0.5s;
+}

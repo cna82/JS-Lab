@@ -1,0 +1,200 @@
+@import url("https://fonts.cdnfonts.com/css/iranyekan");
+@font-face {
+  font-family: vazir;
+  src: url(../fonts/webfonts/Vazirmatn-Black.woff2) format("woff2");
+}
+@font-face {
+  font-family: vazir-bold;
+  src: url(../fonts/webfonts/Vazirmatn-Bold.woff2) format("woff2");
+  font-weight: bold;
+}
+.btn-green {
+  background-color: #8BC34A !important;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "IRANYekan" !important;
+  background-color: rgb(255, 255, 255) !important;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+header {
+  width: 100%;
+}
+header nav {
+  margin-left: 0 !important;
+  width: 100%;
+  background-image: linear-gradient(#1b1b1b, #ffffff);
+  padding: 0.9rem 0.4rem;
+}
+header nav .sub-header {
+  display: flex;
+  flex-flow: row-reverse wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+header nav .sub-header h2 {
+  color: rgb(255, 255, 255);
+  text-shadow: 3px 3px 3px rgb(184, 184, 184);
+}
+header nav #input-serch {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+header nav #input-serch i {
+  background-color: white;
+  color: rgb(110, 110, 110);
+  font-size: 25px !important;
+  padding: 10px;
+  border-top-right-radius: 36px;
+  border-bottom-right-radius: 36px;
+}
+header nav #input-serch input[id=search] {
+  padding: 0.657rem;
+  width: 32rem;
+  border-top-left-radius: 36px;
+  border-bottom-left-radius: 36px;
+  text-align: end;
+}
+header nav #input-serch input[id=search]::placeholder {
+  text-align: end;
+}
+header nav #input-serch input[id=search]:focus {
+  outline-color: blue;
+  box-shadow: 5px 5px 5px 0px blue;
+}
+header nav .btn-my-lab {
+  width: 9rem;
+  padding: 0.5rem;
+}
+header nav .contact-us {
+  margin-top: 1.5rem;
+  padding: 0.7rem;
+  border-top: 1px solid white;
+}
+header nav .contact-us a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+header nav .contact-us button {
+  width: 179px !important;
+}
+header nav .contact-us i {
+  font-size: 20px !important;
+}
+
+#product-list {
+  width: 100%;
+}
+#product-list .products {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  gap: 3rem;
+}
+#product-list .products .product {
+  flex-basis: 18%;
+  padding: 1rem;
+  background-image: linear-gradient(#c893ca, #70e7dd, #cecece);
+  border: 1px solid gray;
+  border-radius: 20px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+#product-list .products .product img {
+  width: 100%;
+  border-radius: 20px;
+  height: 41vh;
+}
+
+.genders button {
+  transition: all 0.7s;
+}
+
+.basket {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.basket > img {
+  height: 100px;
+  width: auto;
+}
+
+.selected {
+  padding: 1rem !important;
+}
+
+.add-item {
+  padding: 5px !important;
+}
+
+footer {
+  margin-top: 3rem;
+  width: 100%;
+  background-color: #646464;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+  gap: 2rem;
+}
+footer .logo {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .logo .contact {
+  display: flex;
+  flex-flow: row-reverse wrap-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+footer .logo .contact span {
+  font-size: 20px;
+  font-weight: bold;
+}
+footer .logo .contact a {
+  text-decoration: none;
+}
+footer .logo .contact i {
+  font-size: 36px !important;
+}
+
+.map {
+  width: 100%;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */

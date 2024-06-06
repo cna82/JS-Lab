@@ -1,0 +1,6 @@
+@mixin d-flex($row, $wrap, $justify, $align) {
+    display: flex;
+    flex-flow: $row $wrap;
+    justify-content: $justify;
+    align-items: $align;
+}

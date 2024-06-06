@@ -1,0 +1,206 @@
+@import "fonts.scss";
+@import "colors.scss";
+@import "mixins.scss";
+
+
+.btn-green {
+    background-color: #8BC34A !important;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'IRANYekan' !important;
+    background-color: rgb(255, 255, 255) !important;
+    @include d-flex(column, wrap, center, center);
+    gap: .5rem;
+
+}
+
+header {
+    width: 100%;
+
+
+    nav {
+        margin-left: 0 !important;
+        width: 100%;
+        background-image: linear-gradient(#1b1b1b, #ffffff);
+        padding: 0.9rem 0.4rem;
+        // position: fixed;
+        // top: 0;
+        // z-index: 1;
+
+        .sub-header {
+            @include d-flex(row-reverse, wrap, flex-start, center);
+            gap: 1rem;
+
+            h2 {
+                color: rgb(255, 255, 255);
+                text-shadow: 3px 3px 3px rgb(184, 184, 184);
+            }
+        }
+
+        #input-serch {
+            @include d-flex(row, wrap, center, center);
+
+            i {
+                background-color: white;
+                color: rgb(110, 110, 110);
+                font-size: 25px !important;
+                padding: 10px;
+                border-top-right-radius: 36px;
+                border-bottom-right-radius: 36px;
+            }
+
+            input[id=search] {
+                padding: 0.657rem;
+                width: 32rem;
+                border-top-left-radius: 36px;
+                border-bottom-left-radius: 36px;
+                text-align: end;
+
+                &::placeholder {
+                    text-align: end;
+                }
+
+                &:focus {
+                    outline-color: blue;
+                    box-shadow: 05px 05px 5px 0px blue;
+                }
+            }
+        }
+
+        .btn-my-lab {
+            width: 9rem;
+            padding: .5rem;
+        }
+
+        .contact-us {
+            margin-top: 1.5rem;
+            padding: .7rem;
+            border-top: 1px solid white;
+
+            a {
+                text-decoration: none;
+                color: white;
+                font-size: 18px;
+            }
+
+            button {
+                width: 179px !important;
+            }
+
+            i {
+                font-size: 20px !important;
+            }
+        }
+    }
+}
+
+#product-list {
+    width: 100%;
+
+    .genders {
+        button {
+            transition: all .7s;
+        }
+    }
+
+    .products {
+        @include d-flex(row, wrap, center, stretch);
+        width: 100%;
+        gap: 3rem;
+
+        .product {
+            flex-basis: 18%;
+            padding: 1rem;
+            background-image: linear-gradient(#c893ca, #70e7dd, #cecece);
+            border: 1px solid gray;
+            border-radius: 20px;
+            @include d-flex(column, wrap, center, center);
+            gap: 0.5rem;
+
+            img {
+                width: 100%;
+                border-radius: 20px;
+                height: 41vh;
+            }
+        }
+
+        .add-item {
+            padding: 5px !important;
+        }
+
+        .selected {
+            padding: 1rem !important;
+        }
+
+
+    }
+
+
+}
+
+.your-lab-items {
+
+    .basket {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+
+        img {
+            height: 100px;
+            width: auto;
+            border-radius: 25px;
+            transition: all 1s;
+
+            &:hover {
+                box-shadow: 0px 0px 5px 4px yellow;
+            }
+        }
+    }
+}
+
+footer {
+    margin-top: 3rem;
+    width: 100%;
+    background-color: #646464;
+    @include d-flex(column, wrap, center, center);
+    padding-top: 1rem;
+    gap: 2rem;
+
+    .logo {
+        width: 100%;
+        @include d-flex(row, wrap, space-around, center);
+
+        .contact {
+            @include d-flex(row-reverse, wrap-reverse, center, center);
+            gap: 1rem;
+
+            span {
+                font-size: 20px;
+                font-weight: bold
+            }
+
+            i {
+                font-size: 36px !important;
+            }
+        }
+    }
+
+    .map {
+        width: 100%;
+        text-align: center
+    }
+}

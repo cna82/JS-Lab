@@ -1,17 +1,19 @@
 // dom nodes seletion
 let productList = document.getElementById("product-list");
 let yourLab = document.querySelector(".your-lab");
+let footer = document.querySelector("footer");
 
 // functions
 let render = (list) => {
+  footer.classList.remove("d-none");
   let section = `
   <div class="w-10  p-2 m-4 d-flex justify-content-center  gap-4 genders">
-  <button class="btn btn-outline-info " onclick="handleCategory()" id="درام" > درام </button>
-  <button class="btn btn-outline-danger " onclick="handleCategory()" id="عاشقانه">عاشقانه</button>
-  <button class="btn btn-outline-primary " onclick="handleCategory()" id="فلسفه">فلسفه</button>
-  <button class="btn btn-outline-success " onclick="handleCategory()" id="تاریخ">تاریخ</button>
-  <button class="btn btn-outline-warning " onclick="handleCategory()" id="شعر">شعر</button>
-  <button onclick="handleBackToMenu()" class="btn btn-outline-dark ">   همه دسته بندی ها</button>
+  <button class="btn btn-info " onclick="handleCategory()" id="درام" > درام </button>
+  <button class="btn btn-danger " onclick="handleCategory()" id="عاشقانه">عاشقانه</button>
+  <button class="btn btn-primary " onclick="handleCategory()" id="فلسفه">فلسفه</button>
+  <button class="btn btn-success " onclick="handleCategory()" id="تاریخ">تاریخ</button>
+  <button class="btn btn-warning " onclick="handleCategory()" id="شعر">شعر</button>
+  <button onclick="handleBackToMenu()" class="btn btn-dark ">   همه دسته بندی ها</button>
 
  </div>
   
@@ -28,6 +30,7 @@ let render = (list) => {
                     <h6> ژانر :  <span>${item.genre}</span></h6>
                     <h6> سال انتشار :  <span>${item.publishedDate}</span></h6>
                     <h6><span>${item.language}</span> : زبان</h6>
+                    <h6><span>${item.price}</span> تومان</h6>
                     ${
                       !YOURLAB.find((yourLabItem) => yourLabItem.id === item.id)
                         ? `<button class="btn btn-green text-light add-item" onclick="handleAddToYourLab('${item.id}')">اضافه کردن به کتابخانه من</button>`
@@ -43,14 +46,15 @@ let render = (list) => {
 };
 
 let renderYourLab = () => {
+  footer.classList.toggle("d-none");
   let section = `<section class="your-lab-items d-flex flex-column gap-3">
-  <div class="text-center ">
-  <button onclick="handleBackToMenu()" class="btn btn-lg btn-info ">  بازگشت به صفحه اصلی</button>
+  <div class="text-center bg-light p-2">
+  <button onclick="handleBackToMenu()" class="btn  btn-danger "> <i class="fa fa-window-close fa-3x" aria-hidden="true"></i> </button>
   </div>
   `;
   section += YOURLAB.map((item) => {
     return `
-                  <div class="product basket">
+                  <div class="product basket p-2">
                       <img src="${item.imgSrc}" />
                       <h3>${item.title}</h3>
                       <h5 class="text-center lh-sm">  نویسنده : <span>${item.author}</span></h5>
@@ -69,26 +73,26 @@ let renderYourLab = () => {
   yourLab.textContent = YOURLAB.length;
 };
 
-let handleSearch = (event) => {
+handleSearch = (event) => {
   let value = event.target.value;
   let resultOfSearch = BOOKS.filter((item) => item.title.search(value) > -1);
   render(resultOfSearch);
 };
 
-let handleAddToYourLab = (prductId) => {
+handleAddToYourLab = (prductId) => {
   let finded = BOOKS.find((item) => item.id === +prductId);
   YOURLAB.push(finded);
   render(BOOKS);
 };
-let handleRemove = (productId) => {
+handleRemove = (productId) => {
   let filtered = YOURLAB.filter((item) => !(item.id === +productId));
   YOURLAB = filtered;
   renderYourLab();
 };
-let handleBackToMenu = () => {
+handleBackToMenu = () => {
   render(BOOKS);
 };
-let handleCategory = () => {
+handleCategory = () => {
   let genre = event.target.getAttribute("id");
   let finded = BOOKS.filter((item) => item.genre === genre);
   console.log(finded);
@@ -99,8 +103,3 @@ let handleCategory = () => {
 window.addEventListener("load", () => {
   render(BOOKS);
 });
-
-
-
-
-

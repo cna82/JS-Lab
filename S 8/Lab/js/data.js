@@ -6,6 +6,7 @@ let BOOKS = [
     publishedDate: 2007,
     language: "persian",
     genre: "تاریخ",
+    price:250000,
     imgSrc: "../images/item-images/1.jpg",
   },
   {
@@ -15,6 +16,7 @@ let BOOKS = [
     publishedDate: 385,
     language: "greek",
     genre: "فلسفه",
+    price:350000,
     imgSrc: "../images/item-images/2.jpg",
   },
   {
@@ -24,6 +26,7 @@ let BOOKS = [
     publishedDate: 1177,
     language: "persian",
     genre: "شعر",
+    price:550000,
     imgSrc: "../images/item-images/3.jpg",
   },
   {
@@ -33,6 +36,7 @@ let BOOKS = [
     publishedDate: 1258,
     language: "persian",
     genre: "شعر",
+    price:200000,
     imgSrc: "../images/item-images/4.jpg",
   },
   {
@@ -42,6 +46,7 @@ let BOOKS = [
     publishedDate: 1200,
     language: "persian",
     genre: "شعر",
+    price:250000,
     imgSrc: "../images/item-images/5.jpg",
   },
   {
@@ -51,6 +56,7 @@ let BOOKS = [
     publishedDate: 1595,
     language: "english",
     genre: "عاشقانه",
+    price:820000,
     imgSrc: "../images/item-images/6.jpg",
   },
   {
@@ -60,6 +66,7 @@ let BOOKS = [
     publishedDate: 1054,
     language: "persian",
     genre: "عاشقانه",
+    price:375000,
     imgSrc: "../images/item-images/7.jpg",
   },
   {
@@ -69,6 +76,7 @@ let BOOKS = [
     publishedDate: 1258,
     language: "persian",
     genre: "شعر",
+    price:512000,
     imgSrc: "../images/item-images/8.jpg",
   },
   {
@@ -78,6 +86,7 @@ let BOOKS = [
     publishedDate: 1257,
     language: "persian",
     genre: "شعر",
+    price:210000,
     imgSrc: "../images/item-images/9.jpg",
   },
   {
@@ -87,6 +96,7 @@ let BOOKS = [
     publishedDate: 1311,
     language: "persian",
     genre: "شعر",
+    price:610000,
     imgSrc: "../images/item-images/10.jpg",
   },
   {
@@ -96,6 +106,7 @@ let BOOKS = [
     publishedDate: 1188,
     language: "persian",
     genre: "عاشقانه",
+    price:75000,
     imgSrc: "../images/item-images/11.jpg",
   },
   {
@@ -105,6 +116,7 @@ let BOOKS = [
     publishedDate: 1010,
     language: "persian",
     genre: "شعر",
+    price:100000,
     imgSrc: "../images/item-images/12.jpg",
   },
   {
@@ -114,6 +126,7 @@ let BOOKS = [
     publishedDate: 762,
     language: "greek",
     genre: "شعر",
+    price:250000,
     imgSrc: "../images/item-images/13.jpg",
   },
   {
@@ -123,6 +136,7 @@ let BOOKS = [
     publishedDate: 725,
     language: "greek",
     genre: "شعر",
+    price:450000,
     imgSrc: "../images/item-images/14.jpg",
   },
   {
@@ -132,6 +146,7 @@ let BOOKS = [
     publishedDate: 1609,
     language: "greek",
     genre: "درام",
+    price:370000,
     imgSrc: "../images/item-images/15.jpg",
   },
   {
@@ -141,6 +156,7 @@ let BOOKS = [
     publishedDate: 1605,
     language: "spanish",
     genre: "درام",
+    price:950000,
     imgSrc: "../images/item-images/16.jpg",
   },
 ];

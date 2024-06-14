@@ -201,7 +201,7 @@ header {
         img {
             height: 100px;
             width: 100px;
-         
+
             transition: all 1s;
 
             &:hover {
@@ -212,7 +212,7 @@ header {
 }
 
 footer {
-   
+
     margin-top: 3rem;
     width: 100%;
     background-color: #646464;
@@ -248,3 +248,15 @@ footer {
 
 
 
+.my-select {
+    width: 12rem !important;
+    text-align: right;
+}
+
+.counter{
+    font-size: 19px !important;
+}
+
+.mt-mine{
+    margin-top: -8px !important;
+}

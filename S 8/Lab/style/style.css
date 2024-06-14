@@ -217,4 +217,17 @@ footer .map {
   text-align: center;
 }
 
+.my-select {
+  width: 12rem !important;
+  text-align: right;
+}
+
+.counter {
+  font-size: 19px !important;
+}
+
+.mt-mine {
+  margin-top: -8px !important;
+}
+
 /*# sourceMappingURL=style.css.map */

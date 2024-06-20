@@ -1,0 +1,59 @@
+.post {
+  background-color: white !important;
+  padding: 1rem;
+  margin: 1rem;
+  border: 1px solid;
+  border-radius: 0.8rem;
+}
+
+body {
+  background-image: url("./bg.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.find {
+  padding: 0.59rem !important;
+}
+
+.form-select-sm {
+  color: #0d6efd !important;
+  border-color: #0d6efd !important;
+}
+.form-select-sm:hover {
+  cursor: pointer;
+}
+.form-select-sm option:hover {
+  cursor: pointer;
+}
+
+#show-counter {
+  color: white !important;
+}
+
+.bg-nav {
+  background-color: white !important;
+  border-bottom: 1px solid #7e7e7e !important;
+}
+
+.mt-mine {
+  margin-top: 6rem !important;
+}
+
+.icon-search {
+  border-top-left-radius: 0.5rem !important;
+  border-bottom-left-radius: 0.5rem !important;
+}
+
+#basic-url {
+  border-top-right-radius: 0.5rem !important;
+  border-bottom-right-radius: 0.5rem;
+}
+
+#select-authous {
+  border-radius: 0.5rem;
+}
+
+/*# sourceMappingURL=style.css.map */

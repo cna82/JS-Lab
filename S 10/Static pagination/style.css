@@ -1,0 +1,29 @@
+body {
+    background-image: url("./bg.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.post {
+    background-color: white !important;
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid;
+    border-radius: .8rem;
+
+}
+
+#show-counter {
+    color: white !important;
+}
+
+.pgn {
+    margin-top: 1rem !important;
+}
+
+.bg-nav {
+    background-color: white !important;
+    border-bottom: 1px solid #7e7e7e !important;
+}

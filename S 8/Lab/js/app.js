@@ -4,7 +4,7 @@ let yourLab = document.querySelector(".your-lab");
 let footer = document.querySelector("footer");
 let counter = 0;
 // functions
-let render = (list) => {
+const render = (list) => {
   footer.classList.remove("d-none");
   let section = `
   <div class="w-10  p-2 m-4 d-flex justify-content-center  gap-4 genders">
@@ -45,8 +45,8 @@ let render = (list) => {
   yourLab.textContent = YOURLAB.length;
 };
 
-let renderYourLab = () => {
-  footer.classList.toggle("d-none");
+function renderYourLab() {
+  footer.classList.add("d-none");
   let section = `<section class="your-lab-items d-flex flex-column gap-3">
   <div class="text-center bg-danger mt-mine p-2">
   <button onclick="handleBackToMenu()" class="btn  btn-danger text-center"> بازگشت به صفحه اصلی </button>
@@ -82,37 +82,37 @@ let renderYourLab = () => {
 
   section += `
   </section>`;
- 
+  let span = document.getElementById("count");
+  console.log(span);
   productList.innerHTML = section;
   yourLab.textContent = YOURLAB.length;
-};
-
-handleSearch = (event) => {
+}
+const handleSearch = (event) => {
   let value = event.target.value;
   let resultOfSearch = BOOKS.filter((item) => item.title.search(value) > -1);
   render(resultOfSearch);
 };
 
-handleAddToYourLab = (prductId) => {
+const handleAddToYourLab = (prductId) => {
   let finded = BOOKS.find((item) => item.id === +prductId);
   YOURLAB.push(finded);
   render(BOOKS);
 };
-handleRemove = (productId) => {
+const handleRemove = (productId) => {
   let filtered = YOURLAB.filter((item) => !(item.id === +productId));
   YOURLAB = filtered;
   renderYourLab();
 };
-handleBackToMenu = () => {
+const handleBackToMenu = () => {
   render(BOOKS);
 };
-handleCategory = () => {
+const handleCategory = () => {
   let genre = event.target.getAttribute("id");
   let finded = BOOKS.filter((item) => item.genre === genre);
   console.log(finded);
   render(finded);
 };
-handlePrice = (event, count) => {
+const handlePrice = (event, count) => {
   let price = event.target.value;
   price += price * count;
   return price;

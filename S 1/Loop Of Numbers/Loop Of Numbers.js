@@ -10,3 +10,4 @@ function loopOfNumbers() {
   }
   alert(sum);
 }
+loopOfNumbers();

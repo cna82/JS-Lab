@@ -1,4 +1,4 @@
-const COUNTRIES = [
+const countries = [
   "iran",
   "australia",
   "brazil",
@@ -13,48 +13,45 @@ const COUNTRIES = [
   "UAE",
   "argentina",
 ];
-const alphabet = [
-  "A",
-  "B",
-  "C",
-  "D",
-  "E",
-  "F",
-  "G",
-  "H",
-  "I",
-  "J",
-  "K",
-  "L",
-  "M",
-  "N",
-  "O",
-  "P",
-  "Q",
-  "R",
-  "S",
-  "T",
-  "U",
-  "V",
-  "W",
-  "X",
-  "Y",
-  "Z",
-];
-// dom nodes selection
-let ul = document.getElementById("countries");
+let span = document.querySelector("span");
+let container = document.getElementById("countries");
 
-let sortedList = COUNTRIES.map((country) => country.toLowerCase()).sort();
-console.log(sortedList);
+// lowerCase items
+let temp = "";
+for (let contry of countries) {
+  temp += ` ${contry}&nbsp; `;
+  span.innerHTML = temp;
+}
 
-// functions
+for (let i = 0; i < countries.length; i++) {
+  countries[i] = countries[i].toLowerCase();
+}
 
-function render(list) {
-  for (let item of list) {
-    let li = document.createElement("li");
-    li.textContent = item;
-    ul.appendChild(li);
+// sort function
+countries.sort();
+
+let firstLetter = countries[0][0];
+let array = [countries[0]];
+
+for (let i = 1; i < countries.length; i++) {
+  if (countries[i][0] === firstLetter) {
+    array.push(countries[i]);
+  } else {
+    container.innerHTML +=
+      `<br><b>${firstLetter.toUpperCase()}(${array.length})</b> <br>` +
+      array.join("</br>");
+    firstLetter = countries[i][0];
+    array = [countries[i]];
   }
 }
 
-render(sortedList);
+function solution(string) {
+  for (let i = 0; i < string.length; i++) {
+    if (string[i] == string[i].toUpperCase()) {
+      string[i] = ` ${string[i]}`;
+    }
+  }
+  console.log(string);
+}
+
+solution("camelCasingTest");

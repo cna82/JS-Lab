@@ -1,9 +1,8 @@
+// startsWith method case insensitive
 
-
-function filterStudents(studentList,startChar) {
-    const filteredList = studentList.filter(function(student){
-        return student.startsWith(startChar)
-    })
-
-    return filteredList;
+function filterStudents(studentList, startChar) {
+  let stChar = startChar.toUpperCase();
+  let upperList = studentList.map((item) => item.toUpperCase());
+  let filteredList = upperList.filter((student) => student.startsWith(stChar));
+  return filteredList;
 }

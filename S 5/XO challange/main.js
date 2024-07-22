@@ -1,5 +1,11 @@
+// dom nodes and variables
 let Blocks = document.querySelectorAll("div");
 let Turn = 2;
+
+// functions
+function handleRefresh() {
+  window.location.reload();
+}
 function CheckToWin() {
   let Box = [];
   let Winner = 0;
@@ -25,7 +31,7 @@ function CheckToWin() {
   }
   if (Winner != 0) {
     setTimeout(function () {
-      alert(Winner + " Win!!!");
+      alert(`${Winner} Won !!!`);
     }, 0);
   }
 }
@@ -44,6 +50,8 @@ function Click() {
   }
   CheckToWin();
 }
+
+// events
 for (let Block of Blocks) {
   Block.onclick = Click;
 }

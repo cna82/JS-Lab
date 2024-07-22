@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: cursive !important ;
+    background-color: #ddd !important;
+}
+
+#time {
+    margin-top: 1.5rem !important;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+h3{
+    margin-top: .5rem !important;
+
+    text-align: center;
+}
+
+section {
+    margin-top: 1rem;
+    width: 100%;
+    display: grid;
+    grid-template: repeat(4, 7rem) /repeat(4, 7rem);
+    justify-content: center;
+    align-content: start;
+
+}
+
+div {
+
+    border: 1px solid black;
+    padding: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+i {
+    font-size: 3rem;
+    display: none !important;
+}
+
+.show i {
+    display: block !important;
+}
+
+.win i {
+    display: block !important;
+}
+
+.open {
+    background: green
+}
+
+.red {
+    background: red
+}

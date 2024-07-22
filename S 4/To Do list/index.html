@@ -4,18 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TO Do lIST</title>
-    <script src="main.js" defer></script>
+    <title>To Do List</title>
     <link rel="stylesheet" href="style.css">
-
+    <script src="app.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div>
-        <h1> TO DO LIST</h1>
-        <input type="text" name="text" id="list" onclick="toDoList()" placeholder="What needs to be done?">
-       
-    </div>
+    <main class="container p-2">
+        <span class="text-light d-block text-center m-auto"> HINT : if you've done a task , you can click to mark it ,
+            and if U wanna remove a task you can delete it by
+            pressing the remove button in the end of each task</span>
+        <h2 class="text-center my-4 text-light">To Do List </h2>
+        <div class="input-group w-75 mb-3 m-auto">
+            <input type="text" class="form-control" placeholder="Should be done !!!" aria-label="Should be done !!!"
+                aria-describedby="button-addon2" id="to-do-list-text" onkeyup="addWithEnter(event)">
+            <button class="btn btn-warning" type="button" id="button-addon2" onclick="handleAdd()">Press Enter or click
+                here to add to list</button>
+        </div>
+        <ul>
+            <!-- filled with js  -->
+        </ul>
+    </main>
 </body>
 
 </html>

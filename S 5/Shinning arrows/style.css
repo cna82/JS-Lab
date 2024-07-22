@@ -1,54 +1,34 @@
-body {
-    height: 100vh;
+* {
+    padding: 0;
     margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ddd;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(53, 53, 53);
+    gap: 4rem;
 }
 
-.upDown {
-    position: relative;
+section #up-down {
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
 }
 
-
-.up {
-    color: white;
-    font-size: 90px;
-    position: absolute;
-    top: -15rem;
-    right: -5px;
+div .icon {
+    font-size: 9rem !important;
 }
 
-.down {
-    color: white;
-    font-size: 90px;
-    position: absolute;
-    top: 15rem;
-    right: -5px;
-}
-
-.leftRight {
-    position: relative;
-}
-
-.left {
-    color: white;
-    font-size: 90px;
-    position: absolute;
-    top: -10px;
-    left: -19rem;
-}
-
-.right {
-    color: white;
-    font-size: 90px;
-    position: absolute;
-    top: -10px;
-    right: -15rem;
-}
-
-.shine {
-    color: rgb(0, 195, 255);
-    transition: 0.5s;
+.active {
+    color: red !important;
+    text-shadow: 0 6px 7px yellow;
 }

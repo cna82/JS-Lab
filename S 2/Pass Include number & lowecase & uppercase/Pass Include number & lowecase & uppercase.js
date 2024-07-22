@@ -1,12 +1,13 @@
 // Random pass generator include Number and Lowercase and Uppercase chars
 
-const alphabet = "abcdefghijklmnopqrstuvwxyz0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
+const pattern =
+  "abcdefghijklmnopqrstuvwxyz0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 function makePass() {
   let empty = "";
+  debugger;
   while (empty.length < 8) {
-    let random = Math.floor(Math.random() * alphabet.length);
-    empty += alphabet[random];
+    let random = Math.floor(Math.random() * pattern.length);
+    empty += pattern[random];
   }
   return empty;
 }

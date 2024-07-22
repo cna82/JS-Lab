@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: tahoma;
+    background-color: #ddd;
+}
+
+header {
+    width: 100%;
+    margin-top: .5rem;
+    text-align: center;
+    line-height: 2.4rem;
+}
+
+header button {
+    margin-top: .5rem;
+    padding: .8rem;
+    border: 1px solid black;
+    border-radius: .5rem;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: yellow;
+    cursor: pointer;
+}
+
+.not-finished {
+    font-size: 22px;
+    color: red;
+}
+
+.finished {
+    font-size: 22px;
+    color: #0db80d;
+}
+
+main {
+    margin: 2rem auto;
+    width: 80%;
+    height: 100vh;
+    display: grid;
+    grid-template: repeat(4, 100px)/repeat(4, 100px);
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+main div {
+    border: 1px solid;
+    cursor: pointer;
+}
+
+.disabled {
+    pointer-events: none;
+}

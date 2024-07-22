@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+div {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+div input[type=text] {
+    width: 25rem;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: .8rem;
+}
+
+div button {
+    padding: 1rem;
+    border: 1px solid;
+    border-radius: .8rem;
+    cursor: pointer;
+}

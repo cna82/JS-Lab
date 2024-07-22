@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: 0;
+}
+
+body{
+    font-family: cursive !important;
+    background-color: #ddd !important;
+
+}
+ ul{
+    list-style-type:none ;
+    width: 80%;
+ }
+
+ul li{
+    width: 97%;
+    padding: 1rem;
+    font-size: 22px !important;
+    border: 1px solid red;
+    color:black !important ;
+}
+.container{
+   margin: 2rem auto;
+    width: 80%;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-flow: column wrap; 
+}
+
+i{
+    font-size: 25px !important;
+}

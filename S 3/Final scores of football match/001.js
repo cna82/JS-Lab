@@ -1,12 +1,12 @@
-function calScores(arrPoints) {
-  let points = 0;
-  for (const point of arrPoints) {
+function calScores(list) {
+  let ourPoint = 0;
+  for (let point of list) {
     if (point[0] > point[2]) {
-      points += 3;
+      ourPoint += 3;
     }
     if (point[0] === point[2]) {
-      points++;
+      ourPoint++;
     }
   }
-  return points;
+  return `our Point = ${ourPoint}`;
 }

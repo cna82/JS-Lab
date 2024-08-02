@@ -222,6 +222,9 @@ footer .map {
   text-align: right;
   cursor: pointer;
 }
+.my-select option {
+  cursor: pointer;
+}
 
 .counter {
   font-size: 19px !important;

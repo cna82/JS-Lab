@@ -1,0 +1,23 @@
+#text-shadow h1 {
+    color: #ffffff;
+    font-family: "Teko", sans-serif;
+    font-size: 5rem;
+    text-transform: uppercase;
+    animation: glow 2s ease-in-out infinite alternate;
+    text-align: center;
+}
+
+@keyframes glow {
+    from {
+        /* text-shadow: 0 0 20px #2d9da9; */
+        text-shadow: 0 0 20px #a92da9;
+
+    }
+
+    to {
+        /* text-shadow: 0 0 30px #34b3c1, 0 0 10px #4dbbc7; */
+        text-shadow: 0 0 30px #34b3c1, 0 0 10px #494949;
+        color: rgb(0, 0, 0);
+
+    }
+}
